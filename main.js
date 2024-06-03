@@ -15,14 +15,22 @@ function verificarVencedor(){
 
         if(casaX.includes(posibilidade[0]) && casaX.includes(posibilidade[1]) && casaX.includes(posibilidade[2])){
             document.querySelector('#vencedor').innerHTML = '✕ ganhou 🎉'
-            parar = true
+            parar = true;
+            return
         }
 
         if(casaO.includes(posibilidade[0]) && casaO.includes(posibilidade[1]) && casaO.includes(posibilidade[2])){
             document.querySelector('#vencedor').innerHTML = '◯ ganhou 🎉'
             parar = true
+            return
         }
     }
+
+    if (rodadas === 9) {
+        document.querySelector('#vencedor').innerHTML = 'Deu velha!';
+        parar = true;
+    }
+}
 }
 
 novoJogo.onclick = function(){
