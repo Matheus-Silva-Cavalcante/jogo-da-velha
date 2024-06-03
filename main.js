@@ -31,7 +31,7 @@ function verificarVencedor(){
         parar = true;
     }
 }
-}
+
 
 novoJogo.onclick = function(){
     window.location.reload();
