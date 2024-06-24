@@ -27,7 +27,7 @@ function verificarVencedor(){
     }
 
     if (rodadas === 9) {
-        document.querySelector('#vencedor').innerHTML = 'Deu velha!';
+        document.querySelector('#vencedor').innerHTML = 'Deu velha!👵';
         parar = true;
     }
 }
